@@ -4,6 +4,26 @@ import { BuildOptions } from './types/config';
 
 export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
 
+    const babelLoader = {
+        test: /\.[jt]sx?$/,
+        exclude: /node_modules/,
+        use: {
+            loader: "babel-loader",
+            options: {
+                presets: ["@babel/preset-env"],
+                plugins: [
+                    [
+                        "i18next-extract",
+                        {
+                            locales: ["ru", "en"],
+                            keyAsDefaultValue: true,
+                        }
+                    ]
+                ]
+            }
+        }
+    };
+
     // Если не используем тайпскрипт - нужен babel-loader
     const typescriptLoader = {
         test: /\.tsx?$/,
@@ -48,6 +68,7 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
     };
 
     return [
+        babelLoader,
         typescriptLoader,
         cssLoader,
         svgLoader,

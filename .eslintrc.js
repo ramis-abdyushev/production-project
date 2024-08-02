@@ -1,24 +1,45 @@
+/* eslint-env node */
+
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    jest: true,
-  },
-  extends: ['plugin:react/recommended', 'plugin:i18next/recommended', 'plugin:prettier/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
+    'plugin:react-hooks/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+    'plugin:import/react',
+    'plugin:jsx-a11y/recommended',
+    'plugin:i18next/recommended',
+    'plugin:prettier/recommended',
+  ],
+  plugins: ['@typescript-eslint'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 'latest',
-    sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'i18next'],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+    'import/resolver': {
+      typescript: true,
+    },
+  },
   rules: {
-    'react/react-in-jsx-scope': 'off',
-    'i18next/no-literal-string': ['error', { markupOnly: true }],
+    'i18next/no-literal-string': 1,
+  },
+  env: {
+    browser: true,
+    es2022: true,
+    jest: true,
   },
   globals: {
-    __IS_DEV__: true,
+    __IS_DEV__: 'readonly',
   },
 };

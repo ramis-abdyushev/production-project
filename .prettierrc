@@ -2,5 +2,19 @@
   "printWidth": 120,
   "singleQuote": true,
   "bracketSameLine": true,
-  "arrowParens": "avoid"
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": "*.svg",
+      "options": {
+        "parser": "html"
+      }
+    }
+  ]
 }

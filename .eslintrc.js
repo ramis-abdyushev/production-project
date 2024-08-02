@@ -42,4 +42,5 @@ module.exports = {
   globals: {
     __IS_DEV__: 'readonly',
   },
+  ignorePatterns: ['!.stylelintrc.json'],
 };

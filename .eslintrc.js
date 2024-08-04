@@ -32,6 +32,7 @@ module.exports = {
     },
   },
   rules: {
+    'import/no-named-as-default-member': 0,
     'i18next/no-literal-string': 1,
   },
   env: {

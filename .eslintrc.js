@@ -1,5 +1,3 @@
-/* eslint-env node */
-
 module.exports = {
   extends: [
     'eslint:recommended',
@@ -36,6 +34,7 @@ module.exports = {
     'i18next/no-literal-string': 1,
   },
   env: {
+    node: true,
     browser: true,
     es2022: true,
     jest: true,

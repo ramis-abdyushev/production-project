@@ -32,6 +32,9 @@ module.exports = {
   rules: {
     'import/no-named-as-default-member': 0,
     'i18next/no-literal-string': 1,
+    'jsx-a11y/no-static-element-interactions': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'react-hooks/exhaustive-deps': 2,
   },
   env: {
     node: true,

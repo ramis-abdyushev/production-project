@@ -30,6 +30,7 @@ module.exports = {
     },
   },
   rules: {
+    'no-debugger': 1,
     'import/no-named-as-default-member': 0,
     'i18next/no-literal-string': 1,
     'jsx-a11y/no-static-element-interactions': 0,

@@ -3,6 +3,7 @@
   "singleQuote": true,
   "bracketSameLine": true,
   "arrowParens": "avoid",
+  "endOfLine": "lf",
   "overrides": [
     {
       "files": ".prettierrc",

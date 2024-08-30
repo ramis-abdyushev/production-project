@@ -6,8 +6,7 @@ import { getProfileData } from '../../model/selector/getProfileData/getProfileDa
 import { getProfileIsLoading } from '../../model/selector/getProfileIsLoading/getProfileIsLoading';
 import { getProfileError } from '../../model/selector/getProfileError/getProfileError';
 import { Text } from 'shared/ui/Text/Text';
-import Button from '@storybook/react/dist/ts3.9/demo/Button';
-import { ButtonTheme } from 'shared/ui/Button/Button';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { Input } from 'shared/ui/Input/Input';
 
 interface ProfileCardProps {

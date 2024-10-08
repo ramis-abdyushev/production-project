@@ -100,6 +100,12 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "fefsefesfsefes",
+      "id": "piUWiy4"
     }
   ],
   "users": [
@@ -118,14 +124,28 @@
       "avatar": "https://rg.ru/uploads/images/137/59/34/hak.jpg"
     }
   ],
-  "profile": {
-    "first": "Тимур",
-    "lastname": "Ульби",
-    "age": 22,
-    "currency": "RUB",
-    "country": "Belarus",
-    "city": "Moscow",
-    "username": "admin",
-    "avatar": "https://pic.rutubelist.ru/user/3b/27/3b2758ad5492a76b578f7ee072e4e894.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Тимур",
+      "lastname": "Ульби",
+      "age": 42,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Moscow",
+      "username": "admin",
+      "avatar": "https://pic.rutubelist.ru/user/3b/27/3b2758ad5492a76b578f7ee072e4e894.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Тимур",
+      "lastname": "Ульби",
+      "age": 22,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "Ramis",
+      "avatar": "https://rg.ru/uploads/images/137/59/34/hak.jpg"
+    }
+  ]
 }
